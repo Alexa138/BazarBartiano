@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #ffffff; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 24px; font-weight: bold; }
+        .menu { display: flex; gap: 20px; }
+        .menu a { text-decoration: none; color: black; font-weight: 600; }
+        .btn { background: #e5007d; color: white; padding: 10px 20px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
+        .container { display: flex; justify-content: center; align-items: center; gap: 40px; padding: 60px; }
+        .card { width: 320px; background: #f1e7e3; text-align: center; border-radius: 10px; overflow: hidden; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
+        .card img { width: 100%; height: 280px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card h3 { font-size: 20px; margin: 10px 0; }
+        .card button { background: #6153cc; color: white; border: none; padding: 12px; width: 90%; border-radius: 5px; cursor: pointer; font-weight: bold; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+        .carrito { margin-top: 40px; padding: 20px; text-align: center; background: #f1e7e3; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
+        .carrito h2 { font-size: 24px; font-weight: bold; }
+        .carrito p { font-size: 18px; }
+        .carrito input { margin-top: 10px; }
+        .carrito button { background: #e5007d; color: white; border: none; padding: 12px; width: 90%; border-radius: 5px; cursor: pointer; font-weight: bold; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Tu Logo</div>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+        </div>
+        <button class="btn">Iniciar sesión</button>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <img src="https://source.unsplash.com/320x280/?sunglasses" alt="Lentes de sol">
+            <div class="card-content">
+                <h3>Lentes de sol</h3>
+                <button>¡Comprar ahora!</button>
+            </div>
+        </div>
+        <div class="card" style="background: #3c1a6e; color: white;">
+            <img src="https://source.unsplash.com/320x280/?sneakers" alt="Zapatos rojos">
+            <div class="card-content">
+                <h3>Ideales para el día</h3>
+                <button>¡Comprar ahora!</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/320x280/?denim-jacket" alt="Chaqueta de mezclilla">
+            <div class="card-content">
+                <h3>Lo más top</h3>
+                <button>¡Comprar ahora!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carrito">
+        <h2>Carrito</h2>
+        <p>Total: $<span id="total">0</span></p>
+        <h3>Transferencia Bancaria</h3>
+        <p>CBU: <strong>12345678901234567890</strong></p>
+        <input type="file" id="comprobante">
+        <button onclick="comprar()">Finalizar Compra</button>
+    </div>
+    
+    <script>
+        let total = 0;
+        function comprar() {
+            alert('Compra realizada. Suba su comprobante de transferencia.');
+        }
+    </script>
+</body>
+</html>
