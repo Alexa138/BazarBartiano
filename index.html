@@ -77,3 +77,82 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f8d7da; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #f3b0c3; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .logo img { width: 100px; height: auto; }
+        .menu { display: flex; gap: 20px; }
+        .menu a { text-decoration: none; color: black; font-weight: 600; }
+        .carousel { position: relative; width: 80%; max-width: 800px; margin: 20px auto; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); overflow: hidden; }
+        .carousel-inner { display: flex; transition: transform 0.5s ease-in-out; }
+        .carousel-item { min-width: 100%; }
+        .carousel img { width: 100%; height: auto; }
+        .container { display: flex; justify-content: center; align-items: center; gap: 40px; padding: 60px; }
+        .card { width: 320px; background: #f3d9dc; text-align: center; border-radius: 10px; overflow: hidden; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
+        .card img { width: 100%; height: 280px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card h3 { font-size: 20px; margin: 10px 0; }
+        .card button { background: #c47eb6; color: white; border: none; padding: 12px; width: 90%; border-radius: 5px; cursor: pointer; font-weight: bold; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+        .payment-methods { text-align: center; padding: 20px; background: #f3b0c3; border-radius: 10px; margin-top: 20px; }
+        .payment-methods h2, .payment-methods h3 { display: flex; align-items: center; justify-content: center; gap: 10px; font-family: 'Marlin', sans-serif; }
+        .payment-methods img { width: 50px; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/mnt/data/Captura de pantalla 2025-03-03 a las 22.02.12.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="#productos">Productos</a>
+        </div>
+    </div>
+    
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/mnt/data/uno.jpeg" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/mnt/data/dos.jpeg" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/mnt/data/tres.avif" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+    
+    <div id="productos" class="container">
+        <div class="card">
+            <img src="https://source.unsplash.com/320x280/?sunglasses" alt="Lentes de sol">
+            <div class="card-content">
+                <h3>Lentes de sol</h3>
+                <button>¡Comprar ahora!</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/320x280/?sneakers" alt="Zapatos rojos">
+            <div class="card-content">
+                <h3>Ideales para el día</h3>
+                <button>¡Comprar ahora!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="payment-methods">
+        <h2><img src="/mnt/data/1.png" alt="Efectivo"> Efectivo</h2>
+        <h3><img src="/mnt/data/2.png" alt="Transferencia Bancaria"> Transferencia Bancaria</h3>
+        <p>CBU: <strong>12345678901234567890</strong></p>
+        <h3><img src="/mnt/data/3.png" alt="Criptomonedas"> Criptomonedas</h3>
+        <p>Wallet BTC: <strong>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</strong></p>
+    </div>
+</body>
+</html>
